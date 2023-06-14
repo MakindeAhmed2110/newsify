@@ -656,8 +656,11 @@ nav .hamburger{
       
    }
    .wrapper h1{
-      font-size: 50px;
-      line-height: 50px;
+      font-size: 38px;
+      line-height: 40px;
+   }
+   .wrapper h1 br{
+      display: none;
    }
    .wrapper p br{
       display: none;
