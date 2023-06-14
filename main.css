@@ -1,0 +1,760 @@
+ @font-face {
+   font-family: Grifter;
+   src: url('./grifterbold.otf');
+ }
+ @font-face {
+   font-family: inter-medium;
+   src: url('./Inter-Medium.otf');
+ }
+ @font-face {
+   font-family: inter-bold;
+   src: url('./Inter-SemiBold.otf');
+ }
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ body{
+   overflow-x: hidden;
+   font-family : Inter;
+   }
+section{
+   padding: 50px 100px;
+   height: 100vh;
+   color: #ffffde;
+   background : blue;
+   border-bottom-right-radius: 40%;
+   border-top-left-radius: 5%;
+}
+   nav{
+      display: flex;
+      justify-content: space-between;  
+   }
+   nav ul{
+     
+      list-style-type: none;
+   }
+   nav ul li{
+      display: inline-block;
+      padding-left: 16px;
+      cursor: pointer;
+      font-size: 16px;
+      font-family: 'Poppins';
+   }
+   nav ul li a{
+      color: #ffffde;
+      text-decoration: none;
+   }
+   nav ul li button{
+      display: none;
+   }
+   
+nav .hamburger{
+   display :none;
+}
+.hamburger .bar{
+   display : block;
+   justify-content: left;
+   margin : 7px 5px;
+   -webkit-transition: all 0.3s ease-in-out;
+   transition : all 0.3s ease-in-out;
+   background-color: #fff;
+   border-radius: 6px;
+}
+.hamburger .bar-one{
+   width: 25px;
+   height: 3px;
+}
+.hamburger .bar-two{
+   width: 15px;
+   height: 3px;
+}
+   nav header{
+      display: flex;
+   }
+   nav h1{
+      padding-left: -10px;
+      z-index: 999;
+
+   }
+   nav .logo{
+      height: 30px;
+      width: 30px;
+      background : #fff;
+      border-radius: 5px;
+      transform: rotate(45deg);
+      font-family: 'Grifter';
+      color: blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: rotate 2s infinite linear;
+   }
+   @keyframes rotate {
+      from{
+         transform: rotate(0deg)
+      }
+      to{
+         transform : rotate(360deg)
+      }
+   }
+
+   .wrapper {
+      display : flex;
+      justify-content: space-between;
+   }
+   .wrapper .intro{
+      padding-top: 100px;
+   }
+   .intro p{
+      padding-top: 30px;
+      font-size: 18px;
+    
+   }
+   .intro aside{
+      display: flex;
+      gap: 20px;
+      margin-top: 50px;
+      
+   }
+   .download{
+      border: none;
+      background: rgb(255, 251, 251);
+     height : 60px;
+     width: 160px;
+     padding-left: 5px;
+     padding-right: 5px;
+     border-radius: 10px;
+     font-family: 'inter-medium';
+     color: blue;
+     cursor: pointer;
+     display : flex;
+     gap: 5px;
+     align-items: center;
+     font-size: 16px;
+      }
+      .download img{
+         height: 30px;
+         width: 30px;
+      }
+      .how{
+         border: 1px solid #f1f1f1;
+         background: transparent;
+         height : 60px;
+     width: 160px;
+     padding-left: 5px;
+     padding-right: 5px;
+     border-radius: 10px;
+        font-family: 'inter-medium';
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        transition: .5s ease-in;display : flex;
+        gap: 5px;
+        align-items: center;
+      }
+      .how:hover{
+         background: #fff;
+         color: blue;
+      }
+   .wrapper h1{
+      font-size: 56px;
+      line-height: 55px;
+      font-family: 'Grifter';
+   }
+   .wrapper .kit{
+      display: flex;
+      gap: -15px;
+      padding-top: 50px;
+   }
+   .wrapper img.app_mockup{
+      height: 80vh;  
+      transition: .5s ease-in;
+   }
+   .app_mockup:hover{
+      transform : scale(1.1);
+   }
+
+   main{
+      padding: 120px 100px;
+   }
+   .about {
+      display: flex;
+      gap: 20px;
+   }
+   .about .content{
+      padding-top: 50px;
+      padding-left: 50px;
+   }
+   .about .content h1{
+      font-family: 'Grifter';
+      padding-top: 40px;
+      display: flex;
+   }
+   .about img{
+      height: 80vh;
+   }
+   .border-top{
+      border-top: 8px solid blue;
+      border-right: 8px solid blue;;
+      height: 70px;
+      width: 120px;   
+      border-bottom-right-radius: 10px;
+      padding-left: 20px;
+      float: right;
+      display: none;
+   }
+   .border-bottom{
+      border-bottom: 8px solid blue;
+      border-left: 8px solid blue;;
+      height: 70px;
+      width: 120px;   
+      border-bottom-right-radius: 10px;
+      margin-top: 10px;
+      float: left;
+   }
+   .about .enter{
+      padding-left: 40px;
+   }
+   .about p{
+      padding-top: 20px;
+      font-family: 'poppins';
+      font-size: 16px;
+      color: black;
+      text-align: start;
+   }
+   .about button{
+      border : none;
+      box-shadow:  10px 10px 47px #bfbfbf,
+      -10px -10px 47px #ffffff;
+      background: blue;
+      font-family: 'poppins';
+      font-size: 15px;
+      padding: 12px 22px;
+      margin-top: 30px;
+      filter: drop-shadow(4px, #f1f1f1);
+      cursor: pointer;
+      border-radius: 25px;
+      color: white;
+   }
+    .about  .logo2{
+      height: 30px;
+      width: 30px;
+      background : blue;
+      border-radius: 5px;
+      transform: rotate(45deg);
+      font-family: 'Grifter';
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: rotate 2s infinite linear;
+   }
+
+
+    .loop{
+      float:right;
+    }
+    .loop .circle{
+      border-radius: 50%;
+      background-color: deepskyblue;
+      width: 40px;
+      height:40px;
+      z-index: -1;
+      opacity: 1;
+      animation: scaleIn 2s infinite cubic-bezier(.36, .11, .89, .32);
+    }
+    @keyframes scaleIn {
+      from {
+        transform: scale(.5, .5);
+        opacity: .5;
+      }
+      to {
+        transform: scale(2.5, 2.5);
+        opacity: 0;
+      }
+    }
+
+     .footer{
+      display : grid;
+      gap: 60px 80px;
+      grid-template-columns: auto auto auto  auto;
+      background : blue;
+      height: 300px;
+      padding : 50px 100px;
+      width: 100%;
+      color: white;
+      border-top-left-radius: 30%;
+     }
+     .footer .logo2{
+      height: 30px;
+      width: 30px;
+      background : #fff;
+      border-radius: 5px;
+      transform: rotate(45deg);
+      font-family: 'Grifter';
+      color: blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: rotate 2s infinite linear;
+   }
+   .brand h1{
+      display: flex;
+     gap: 10px;
+     font-family: 'Grifter';
+   }
+   .brand p{
+      padding-top: 20px;
+      font-size: 15px;
+      line-height: 25px;
+      font-family: 'Poppins';
+   }
+   .country{
+      padding-top: 20px;
+   }
+   .footer ul{
+      text-decoration: none;
+      list-style-type: none;
+   }
+   .footer ul li{
+      padding-top: 20px;
+      cursor : pointer;
+      font-family: 'Poppins';
+   }
+   .footer .country {
+      font-family: 'Poppins';
+   }
+   .footer ol{
+      display: flex;
+      gap: 20px;
+      list-style-type: none;
+      margin-top: 20px;
+   }
+   .footer ol li{
+      background: #fff;
+      border-radius: 50%;
+      height: 40px;
+      color: black;
+      width: 40px;
+      display: flex;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 700;
+      align-items: center;
+      justify-content: center;
+   }
+
+
+   .content-creators{
+      padding-top: 150px;
+      padding-bottom: 100px;
+      display: flex;
+      gap: 70px;
+      
+   }
+   .content-creators .writeup{
+      padding-top: 50px;
+   }
+   .content-creators h1{
+      font-family : 'Poppins';
+      font-size: 25px;
+      line-height: 30px;
+      font-weight: 600;
+   }
+   .content-creators h1 span{
+      color: blue;
+   }
+   .content-creators .grid{
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto ;
+      gap: 20px 30px;
+      justify-content: center;
+      align-items: center;
+      padding-top: 30px;
+      font-family: 'poppins';
+   }
+   .grid .icon_cover{
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 5px 5px 16px #d2d2d2,
+                  -5px -5px 16px #fff;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+   }
+   .grid img{
+      height: 20px;
+      margin-top: 0;
+      width: 20px;
+   }
+   .content-creators .images{
+      position: relative;
+   }
+   .content-creators img{
+      height: 350px;
+      width: 600px;
+      border-radius: 20px;
+      margin-left: 11px;
+      margin-top: 10px;
+      z-index: 999;
+      
+   }
+   .content-creators .first{
+      height: 100px;
+      width: 120px;
+      border: none;
+      border-radius: 10px;
+      position: absolute;
+      z-index: -1;
+      background: blue;
+      animation: shakeY; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 20s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+   }
+   .content-creators .second{
+      height: 160px;
+      width: 160px;
+      border: none;
+      border-radius: 10px;
+      background: deepskyblue;
+      position: absolute;
+      right: -15px;
+      z-index: -1;
+      margin-top: -150px;
+      animation: shakeY; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 20s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+   }
+
+
+   .monetization{
+      display: flex;
+     justify-content: space-between;
+   }
+   .written{
+      padding-top: 70px;
+      font-family: 'poppins';
+   }
+   .written h1{
+      font-family : 'Poppins';
+      font-size: 25px;
+      line-height: 30px;
+      font-weight: 600;
+   }
+   .written h1 span{
+      color: blue;
+   }
+   .monetization img{
+      margin-right: -30px;
+   }
+   .monetization .grid2{
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto ;
+      gap: 20px 10px;
+      justify-content: center;
+      align-items: center;
+      padding-top: 30px;
+      font-family: 'poppins';
+   }
+   .data{
+      font-size: 15px;
+   }
+   .monetization img{
+      animation: shakeY ease;
+      animation-duration: 15s;
+      animation-iteration-count: infinite;
+   }
+   
+
+   .pricing{
+      padding-top: 100px;
+   }
+   .pricing h1{
+      font-family:'Grifter';
+   }
+
+   .download_app{
+      display: flex;
+      gap: 50px;
+      background: rgba(101, 169, 232, 0.204);
+      padding: 10px 80px;
+      border: none;
+      margin-top: 20px;
+   margin-bottom: 150px;  }
+   .mockup{
+      padding-top: 100px;
+   }
+   .download_app h1{
+      font-family: 'Poppins';
+      font-size: 38px;
+      line-height: 45px;
+   }
+   .download_app p{
+      padding-top: 30px;
+   }
+   .download_cover{
+      display: flex;
+      gap: 50px;
+      padding-top: 20px;
+      align-items: center;
+   }
+   .qr{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding:5px 10px;
+      width: 120px;
+      height: 120px;
+      background : #fff;
+      border-radius: 10px;
+      
+   }
+   .qr img{
+      width: 80px;
+      height: 90px;
+   }
+   .download-button{
+      display: block;
+}
+   
+   .download2{
+      border: none;
+      background: blue;
+     height : 60px;
+     width: 180px;
+     border-radius: 30px;
+     font-family: 'inter-medium';
+     color: #fff;
+     cursor: pointer;
+     display : flex;
+     gap: 5px;
+     align-items: center;
+     justify-content: center;
+     font-size: 15px;
+     margin-top: 20px;
+      }
+   .download2 i, .download3 i{
+      font-size: 25px;
+   }
+   .download3{
+      border: 1px solid deepskyblue;
+      background: transparent;
+     height : 60px;
+     width: 180px;
+     border-radius: 30px;
+     font-family: 'inter-medium';
+     color: black;
+     cursor: pointer;
+     display : flex;
+     gap: 5px;
+     align-items: center;
+     justify-content: center;
+     font-size: 15px;
+     margin-top: 20px;
+   }
+
+
+
+
+
+
+
+@media (max-width : 500px){
+   section{
+      padding: 30px 30px;
+      border-bottom-right-radius: 20%;
+      height: 150vh;
+   } 
+   nav .hamburger{
+      display : block;
+      cursor: pointer;
+   }
+ 
+    nav ul.nav-menu {
+      position: absolute;
+      top : -100%;
+      flex-direction: column;
+      background-color: transparent;
+      width : 100%;
+      margin-top: 90px;
+      margin-left: -30px;
+      border: none;
+      height: 45vh;
+      text-align: left;
+      transition: 0.5s ;
+      padding-left: 30px;
+   }
+   nav ul li{
+      display: block;
+      color : white;
+      margin-top: 15px;
+      font-family: 'Poppins';
+   }
+   nav ul li a{
+      color: #fff;
+   }
+    nav ul.active{
+      top : 0;
+   }
+
+   .hamburger.active .bar:nth-child(2){
+      opacity : 0;
+   }
+   .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+   }
+   .hamburger.active .bar:nth-child(3){
+      transform : translateY(-8px) rotate(-45deg);
+   }
+   nav ul li button{
+      display : block;
+      margin-left: -12px;
+   }
+  nav ul li .letgoo{
+   border : none;
+   width: 100%;
+   padding: 12px;
+   font-size: 16px;
+   background: #fff;
+   color: blue;
+   border-radius: 25px;
+   outline: none;
+   font-family: 'Poppins';
+  }
+  nav ul li .letgoo1{
+   border : none;
+   width: 100%;
+   padding: 12px;
+   font-size: 16px;
+   background: #fff;
+   color: blue;
+   border-radius: 25px;
+   outline: none;
+   font-family: 'Poppins';
+  }
+
+
+
+
+   .wrapper{
+      display: block;
+      transition: .3s;
+   }
+   .wrapper.active{
+      padding-top: 220px;
+   }
+   .intro h1 br{
+      display: none;
+      
+   }
+   .wrapper h1{
+      font-size: 50px;
+      line-height: 50px;
+   }
+   .wrapper p br{
+      display: none;
+      font-size: 15px;
+   }
+  .wrapper .kit{
+   display: block;
+  }
+   .app_mockup2{
+      margin-left: 100px;
+      margin-top: -550px;
+   }
+   main{
+      padding: 250px 15px;
+   }
+   .about{
+      flex-wrap: wrap-reverse;
+   }
+   .about.active{
+      padding-top: 150px;
+   }
+   
+   .about .content{
+     width: 120%;
+      margin-left: -80px;
+      text-align: left;
+   }
+   .about .about1{
+      margin-top: -500px;
+      z-index: 999;
+      margin-left: 100px;
+   }
+    .about img{
+      padding-left: 20px;
+    }
+   .border-top, .border-bottom{
+      padding-left: 0;
+      height: 50px;
+      width: 90px;
+      border-width: 4px;
+      display: none;
+   }
+  
+  
+   .pricing{
+      display : block;
+   }
+   .price1, .price2{
+      margin-top: 30px;
+      margin-left: 10px;
+      margin-right: 15px;
+      padding: 20px;
+   }
+   .footer{
+      display: grid;
+      padding: 30px 20px;
+      grid-template-columns: auto;
+      height: fit-content;
+      border-top-left-radius: 10%;
+      width: 100%;
+   }
+   .content-creators{
+      display: block;
+      gap:0px;
+      width:100%;
+      }
+   .content-creators .images{
+      width: 100%;
+      margin-left: -10px;
+   }
+   .content-creators .grid{
+      gap: 20px 20px;
+   }
+   .content-creators img{
+      width: 100%;
+      height: auto;
+   }
+   .monetization{
+      display: block;
+   }
+   .written{
+      padding-top: 50px;
+   }
+   .monetization img{
+      margin-right: 0;
+      width: 110%;
+      padding-right: 0;
+      margin-left: -15px;
+      margin-top: 20px;
+   }
+   .download_app{
+      display: flex;
+      flex-wrap: wrap-reverse;
+      padding: 20px 30px;
+      padding-top: 0;
+   }
+   .download_app .mockup-img{
+      width: 100%;
+   }
+}
