@@ -345,7 +345,18 @@ nav .hamburger{
       align-items: center;
       justify-content: center;
    }
-
+.first_list h1{
+ font-family: 'Space Grotesk', sans-serif;
+ font-weight: 700;
+ padding-top: 20px; 
+ font-size : 25px;
+}                                     
+.first_list h4{
+ font-family: 'Space Grotesk', sans-serif;
+ font-weight: 400;
+ padding-top: 20px; 
+ font-size : 20px;
+}                                     
 
    .content-creators{
       padding-top: 150px;
