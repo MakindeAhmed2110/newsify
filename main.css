@@ -349,13 +349,15 @@ nav .hamburger{
  font-family: 'Space Grotesk', sans-serif;
  font-weight: 700;
  padding-top: 20px; 
- font-size : 25px;
+ font-size : 22px;
 }                                     
 .first_list h4{
  font-family: 'Space Grotesk', sans-serif;
  font-weight: 400;
  padding-top: 20px; 
- font-size : 20px;
+ font-size : 18px;
+ color: white;
+ 
 }                                     
 
    .content-creators{
